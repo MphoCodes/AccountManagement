@@ -1,7 +1,7 @@
 # Account Management System
 
 <div align="center">
-  <p><strong>A robust full-stack application for managing personal accounts and financial transactions</strong></p>
+  <p><strong>A full-stack application for managing personal accounts and financial transactions</strong></p>
   <p>
     <a href="#features">Features</a> •
     <a href="#installation">Installation</a> •
