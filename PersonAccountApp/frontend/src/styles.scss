@@ -1,0 +1,98 @@
+/* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+@import 'bootstrap/scss/bootstrap';
+@import 'bootstrap-icons/font/bootstrap-icons';
+
+@include mat.core();
+
+$primary-palette: mat.define-palette(mat.$indigo-palette);
+$accent-palette: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+$warn-palette: mat.define-palette(mat.$red-palette);
+
+$theme: mat.define-light-theme((
+  color: (
+    primary: $primary-palette,
+    accent: $accent-palette,
+    warn: $warn-palette,
+  ),
+  typography: mat.define-typography-config(),
+  density: 0,
+));
+
+@include mat.all-component-themes($theme);
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.mat-typography {
+  background-color: #fafafa;
+}
+
+.content-card {
+  margin: 20px;
+  border-radius: 8px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.flex-spacer {
+  flex: 1 1 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.p-20 {
+  padding: 20px;
+}
+
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  margin: 20px 0;
+}
+
+.dashboard-card {
+  margin: 16px;
+  border-radius: 8px;
+  
+  .mat-card-header {
+    background-color: mat.get-color-from-palette($primary-palette, 50);
+    padding: 16px;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .mat-card-content {
+    padding: 16px;
+  }
+}
+
+.action-buttons {
+  display: flex;
+  gap: 8px;
+  margin: 16px 0;
+  
+  button {
+    min-width: 100px;
+  }
+} 
