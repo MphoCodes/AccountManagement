@@ -75,8 +75,7 @@ Developed by Mpho Ndlela for Traq Software, this application demonstrates best p
 - **TypeScript** - Programming language
 - **Bootstrap 5** - CSS framework for responsive design
 - **Angular Material** - UI component library
-- **RxJS** - Reactive programming library
-- **Chart.js** - Data visualization
+
 
 ## Prerequisites
 
